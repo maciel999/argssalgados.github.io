@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url("animate.css");
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+.clearfix::after, .clearfix::before {content: "";display: table;} 
+.clearfix::after {clear: both;}
+.container {width: 80%;margin: 0 auto; position: relative;}
+
+.botao {display: inline-block; text-decoration: none; background-color: #ffff00; color: #ff0033; padding: 5px 7px;}
+.botao:hover {background-color: #ff0033; color: #ffff00;}
+
+.thumb {width: 160px; background-color: #f60; border: 1px solid #f60; box-shadow: 3px 3px 3px #f90; padding: 10px;}
+.img-fluida {display: block; max-width: 100%; height: 200px	;}
+
+.flutua_esq{float:left;}
+.flutua_dir{float:right;}
+.flutua_centro{float: none; margin:0 auto;}
+
+* {margin: 0; box-sizing: border-box;}
+
+p{font-family: 'Arial', sans-serif;}
+
+body{background-color: #ffff99; font-family: sans-serif;} 
+
+#interface{width: 1000px; background-color: #ffffcc; margin: -20px auto 0 auto; padding: 30px 5px 0 5px;}
+
+header#cabecario{height: 200px;}
+
+nav#menu{padding: 5px 0;}
+nav#menu ul{list-style: none; text-align: center; float: right;}
+nav#menu ul li{display: inline-block; background-color: #f60;  margin: 0 4px; padding: 1px 0;}
+nav#menu ul li a{text-decoration: none; color: #ffff00; padding: 10px;}
+nav#menu ul li a:hover {text-decoration: underline;}
+
+#logo {margin: 0; position: absolute; top: -20px;}
+
+#apresentacao h3{color:#A0522D; margin-top: 50px; text-align: center;}
+#apresentacao h1{color:#f00; text-shadow: 2px 2px 2px #333; text-align: center; margin: 30px; font-size: 4em;}
+
+#banner {height: 300px; background: url("../imagens/banner2.jpg"); background-size: cover; background-attachment: fixed;}
+#banner h1{color: #fff; text-shadow: 3px 3px 3px #f60; font-size: 50px; text-align: center; padding-top: 100px;}
+#banner small {display: block; font-size: 30px;}
+
+#visita {width: 40%; padding: 15px; float: left;}
+#visita form {background-color: #f60; padding: 15px;}
+#visita label, #visita span {display: block;}
+#visita span{font-size: 20px; color: #ff0;}
+#visita label {margin-bottom: 15px;}
+#visita input {width: 100%; padding: 5px 7px;}
+#visita input[type="submit"]{width: auto; display: inline-block; border: 15px; background-color: #ffff00; color: #ff0033;}
+#visita input[type="submit"]:hover {background-color: #f00;color: #ff0; cursor: pointer;}
+#visita h2 {color: #8B0000; text-align: center; margin-bottom: 15px;}
+
+#anuncios {width: 60%; padding: 15px; float: right;}
+#anuncios article{margin-bottom: 15px;}
+#anuncios img{float: left; margin-right: 15px; border-radius: 80px;}
+#anuncios p{font-size: 12px; margin-bottom: 5px; color: #800;}
+#anuncios h2 {color: #8B0000; text-align: center; margin-bottom: 15px;}
+#anuncios h3 {color: #fB0000; margin-bottom: 10px;}
+
+footer {background-color: #f90; color: #ffff00; padding: 15px; font-size: 12px;}
+footer #esquerda{width: 50%; float: left; text-align: center;}
+footer #esquerda p {padding-top: 8px;}
+footer #centro, footer #direita {width: 25%; float: left;}
+footer #centro {padding-left: 2%; border-left: 1px solid #ff0033;}
+footer a {color: #ff0033; text-decoration: none;}
+footer a:hover {text-decoration: underline;}
+
+/*ESTILOS PARA SERVICOS*/
+
+#servicos{background-color: #ffffcc; text-align: center;}
+#servicos h2{font-size: 3em; color:#A0522D; margin-bottom: 0px; font-family: 'Anton', sans serif; letter-spacing: 4px;}
+
+.video{margin: 15px 0;}
+.servico-titulo {padding-bottom: 15px; font-size: 2em; color:#A0522D; margin-bottom: 0px; font-family: 'Anton', sans serif; letter-spacing: 5px;}
+
+#cardapio h3{text-decoration: underline; font-family: 'Permanent Marker', cursive; padding: 15px;}
+#cardapio h4{padding-bottom: 15px; color: #8B0000; font-family: 'Arial', cursive;}
+#cardapio p{color: #ff4500; font-family: 'Arial', cursive;}
+#cardapio i {color: #f00; text-decoration: underline;}
+
+/*ESTILOS PARA SOBRE NÓS*/
+
+#sobre{background-color: #ffffcc; text-align: center;}
+#sobre h2{font-size: 2em; text-shadow: 3px 3px 3px #333; color:#A0522D; margin-bottom: 0px; font-family: 'Anton', sans serif; letter-spacing: 2px;}
+#sobre img {border-radius: 100px; box-shadow: 5px 5px 5px #f90; border: 5px solid #f60; margin: 30px;}
+#sobre p{text-align: center; color: #8B0000; margin-bottom: 30px; font-size: 1.25em;}
+
+/*ESTILOS PARA CONTATOS*/
+
+.titulo {padding-bottom: 15px; font-size: 3em; color:#A0522D; margin-bottom: 0px; font-family: 'Anton', sans serif; letter-spacing: 4px;}
+.form_contatos {width: 400px; font-size: 1.1em; background-color:#ffff99; margin-bottom: 15px;}
+.form_contatos fieldset {padding: 10px;}
+.form_contatos label {display: block;}
+.form_contatos label span {display: block; color: #f60; font-family: cursive;}
+.form_contatos input {width: 100%; padding: 5px 10px; font-size: 1.1em;}
+.form_contatos textarea {width: 100%; padding: 5px 10px; font-size: 1.1em;}
+.form_contatos input[type="submit"]{width: auto; margin: 0 auto; display: inline-block; border: none; background-color: #f60; color:#ff0; margin-top: 10px;}
+.form_contatos input[type="submit"]:hover {background-color: #f00;}
+
+.rede_contatos {width: 250px;}
+.rede_contatos div {margin: 15px;}
+.rede_contatos h3 {font-size: 2.25em; text-shadow: 3px 3px 3px #333; color:#A0522D; padding-bottom: 15px; font-family: 'Anton', sans serif; letter-spacing: 2px;}
+.rede_contatos ul {padding-top: 30px;}
+.rede_contatos ul li {list-style: none; margin-bottom: 10px;}
+.rede_contatos ul li a {text-decoration: none; color: #333; font-size: 1.25em;}
+.rede_contatos ul li a:hover {color: #f60;}
